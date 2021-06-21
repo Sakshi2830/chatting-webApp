@@ -5,6 +5,7 @@ import { BorderColorOutlined, PhoneOutlined, QuestionAnswerOutlined, Settings } 
 import { IconButton } from '@material-ui/core'
 import SidebarThread from './SidebarThread'
 import { Avatar } from '@material-ui/core'
+import db, {auth} from '../firebase'
 
 
 const Sidebar = () => {
@@ -25,7 +26,7 @@ const Sidebar = () => {
                 
             </div>
             <div className="sidebar__bottom">
-            <Avatar />
+            <Avatar className="sidebar__bottom__avatar" onClick={() => auth.signOut()} />
             <IconButton>
                 <PhoneOutlined />
             </IconButton>
