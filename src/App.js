@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import './App.css';
 import Login from './components/Login';
 import Telegram from './components/Telegram';
-import { login, logout, selectUser } from './features/userSlice';
+import { login, logout, selectUser } from './features/userSlicecopy';
 import { auth } from './firebase';
 
 
