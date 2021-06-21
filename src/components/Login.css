@@ -1,0 +1,31 @@
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    color: white;
+    /* border: 2px  solid white; */
+    /* box-shadow: 0 1px 3px white, 0 1px; */
+}
+/* .login__telegram{
+    border: 2px  solid white;
+    box-shadow: 0 1px 3px white 1px;
+} */
+
+.login > div > img {
+    object-fit: contain;
+    height: 150px;
+}
+
+.login >button{
+    width: 300px;
+    color: white;
+    background-color: rgba(2, 150, 199);
+}
+
+.login > button:hover{
+    color: rgba(2, 150, 199);
+    background-color: white;
+}
