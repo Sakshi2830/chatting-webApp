@@ -1,8 +1,10 @@
 import React from 'react'
 import './Sidebar.css'
 import SearchIcon from "@material-ui/icons/Search"
-import { BorderColorOutlined } from '@material-ui/icons'
+import { BorderColorOutlined, PhoneOutlined, QuestionAnswerOutlined, Settings } from '@material-ui/icons'
 import { IconButton } from '@material-ui/core'
+import SidebarThread from './SidebarThread'
+import { Avatar } from '@material-ui/core'
 
 
 const Sidebar = () => {
@@ -17,8 +19,23 @@ const Sidebar = () => {
                 <BorderColorOutlined />
                 </IconButton>
             </div>
-            <div className="sidebar__thread"></div>
-            <div className="sidebar__bottom"></div>
+            <div className="sidebar__threads">
+                <SidebarThread />
+                <SidebarThread />
+                
+            </div>
+            <div className="sidebar__bottom">
+            <Avatar />
+            <IconButton>
+                <PhoneOutlined />
+            </IconButton>
+            <IconButton>
+                <QuestionAnswerOutlined/>
+            </IconButton>
+            <IconButton>
+                <Settings />
+            </IconButton>
+            </div>
         </div>
     )
 }

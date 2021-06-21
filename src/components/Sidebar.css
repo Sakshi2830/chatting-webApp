@@ -1,10 +1,10 @@
 .sidebar{
     flex: .25;
     display: flex;
-    
-    /* width: 100vw; */
+    height: 100vh;
     flex-direction: column;
     border-right: 1px solid rgba(190, 190, 190, .1);
+    
 }
 
 .sidebar__header{
@@ -21,7 +21,7 @@
     background-color: #2d4671;
     color: white;
     border-radius: 5px;
-    padding: 3px;
+    padding: 5px;
 }
 .sidebar__input{
     border: none;
@@ -31,6 +31,32 @@
     flex: 1;
 }
 #sidebar__button{
-    color: white;
+    color: white !important;
+}
+
+.sidebar__threads{
+    overflow: scroll;
+    flex:1   
+ }
+.sidebar__threads::-webkit-scrollbar{
+    display: none;
+}
+ .sidebar__bottom{
+     display: flex;
+     justify-content: space-evenly;
+     padding: 10px  10px;
+     border-top: 2px solid rgba(190, 190, 190, .1) ;
+     
+ }
+
+ .sidebar__bottom___avatar:hover{
+     cursor: pointer;
+     opacity: .5;
+ }
     
+.sidebar__bottom > button{
+    color: white;
+}
+.sidebar__bottom > button:hover{
+    color: rgba(2,150, 199);
 }
