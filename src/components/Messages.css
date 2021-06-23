@@ -8,7 +8,7 @@
 }
 
 .message__content{
-    background-color: grey;
+    background-color: rgba(193, 170, 170, 0.911);
     padding: 10px;
     border-radius: 10px;
     margin: 10px;
@@ -17,11 +17,12 @@
 }
 
 .message > div > p{
-    color: white;
+    color: black;
+    font-weight: bolder;
 }
 
 .message > div > small{
-    color: white;
+    color: rgb(255, 255, 255);
     position: absolute;
     font-size: 8px;
     right: 0;
@@ -31,7 +32,7 @@
     margin-left: auto;
 }
 .message__sender > .message__content{
-    background-color: rgb(2, 150, 199);
+    background-color: rgba(238, 105, 57, 0.891);
 }
 .message__sender> .message__photo{
     order: 1;

@@ -4,6 +4,7 @@ import "./SidebarThread.css"
 import { useDispatch } from 'react-redux'
 import { setThread } from '../features/threadSlice'
 import db from '../firebase'
+import * as timeago from 'timeago.js'
 
 
 const SidebarThread = ({id, threadName}) => {
@@ -33,13 +34,13 @@ const SidebarThread = ({id, threadName}) => {
                 )
             }
         >
-            <Avatar src={threadInfo[0]?.photo} />
+            <Avatar src={`https://avatars.dicebear.com/api/human/${Math.floor(Math.random() * 5000)}.svg`} />
             <div className="sidebarThread__details">
                 <h4>{threadName}</h4>
                 <p className="sidebarThread__message">{threadInfo[0]?.messages}</p>
                 {/* <p>yo</p> */}
                 <small className="sidebarThread__timestamp">
-                    {new Date(threadInfo[0]?.timestamp?.toDate()).toLocaleString()}
+                    {timeago.format(new Date(threadInfo[0]?.timestamp?.toDate()))}
 
                 </small>
             </div>
