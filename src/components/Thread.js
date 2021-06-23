@@ -1,7 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { Avatar } from '@material-ui/core'
 import "./Thread.css"
-import { MicNoneOutlined, MoreHoriz, SendRounded, TimerOutlined, EmojiEmotionsOutlined } from '@material-ui/icons'
+import { 
+    MicNoneOutlined,
+    MoreHoriz,
+    SendRounded,
+    TimerOutlined,
+    EmojiEmotionsOutlined } from '@material-ui/icons'
 import { IconButton } from '@material-ui/core'
 import db from '../firebase'
 import firebase from 'firebase'
@@ -9,6 +14,7 @@ import { useSelector } from 'react-redux';
 import { selectThreadName, selectThreadId } from '../features/threadSlice'
 import { selectUser } from '../features/userSlicecopy'
 import Message from './Message'
+import * as timeago from 'timeago.js'
 
 
 
@@ -99,9 +105,8 @@ const Thread = () => {
                     <Avatar src={`https://avatars.dicebear.com/api/human/${Math.floor(Math.random() * 5000)}.svg`} />
                     <div className="thread__header__contents__info">
                         <h4 id="thread__header">{threadName}</h4>
-                        <h5 className="thread__header__contents__info__seen">Last Seen by {user.displayName} at
-                        {new Date(
-                            messages[messages.length - 1]?.timestamp?.toDate()).toLocaleString }
+                        <h5 className="thread__header__contents__info__seen">Last Seen by {user.displayName }-- 
+                        { new Date(messages[0]?.data.timestamp?.toDate()).toLocaleString()}
                         </h5>
                     </div>
                 </div>

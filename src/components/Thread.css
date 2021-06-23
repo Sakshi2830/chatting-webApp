@@ -22,7 +22,7 @@
 }
 .thread__header__contents__info > h5{
     font-weight: 500;
-    color: grey;
+    color: rgb(189, 183, 183);
     margin-left: 5px;
 }
 
@@ -37,6 +37,9 @@
 .thread__messages{
     flex:1;
     overflow: scroll;
+    font-size: x-small;
+    /* background-image: url(https://i.pinimg.com/originals/3a/26/ab/3a26ab1ed14cc32e4a2ee1d740d385b0.jpg); */
+    background-image: url(https://images.unsplash.com/photo-1565033817241-00be28ad9119?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80);
 }
 .thread__messages::-webkit-scrollbar{
     display:none;
@@ -48,6 +51,7 @@
     padding: 10px 20px;
     background-color: transparent;
     border-top: 1px solid rgba(190, 190, 190, .1);
+    
 }
 
 .thread__input > form{
@@ -63,12 +67,20 @@
     background-color: transparent;
     padding: 5px;
     color: white;
+    justify-content: space-between;
 }
 
 .thread__input > form > button{
     color: white;
+    
 }
 
 .thread__input > form >button:hover{
     color: rgba(1, 150, 199);
+}
+.thread__header__contents__info__seen{
+    font-size: xx-small;
+}
+#thread__header{
+    margin-left: 5px;
 }
