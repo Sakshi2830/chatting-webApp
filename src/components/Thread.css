@@ -72,6 +72,7 @@
 
 .thread__input > form > button{
     color: white;
+    background-color: transparent;
     
 }
 
