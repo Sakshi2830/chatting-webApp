@@ -1,10 +1,10 @@
 .login{
-    display: flex;
+    display: grid;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
+    place-items: center;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     color: white;
     /* border: 2px  solid white; */
     /* box-shadow: 0 1px 3px white, 0 1px; */
@@ -14,18 +14,32 @@
     box-shadow: 0 1px 3px white 1px;
 } */
 
-.login > div > img {
-    object-fit: contain;
-    height: 150px;
+.login__container{
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(113, 167, 191);
+    border-radius: 15px ;
+    box-shadow: 2px 2px 3px 1px black, 0 1px; 
+    border: 2px  darkcyan;
 }
 
-.login >button{
+.login__container > div > img {
+    object-fit:  fill;
+    height: 150px;
+    margin-bottom: 30px;
+    margin-top: 25px;
+}
+
+.login__container >button{
+    margin-top: 40px;
     width: 300px;
     color: white;
     background-color: rgba(2, 150, 199);
+    box-shadow: 1px 1px 1px 1px rgba(29, 28, 28, 0.782), 0 1px;
+
 }
 
-.login > button:hover{
+.login__container > button:hover{
     color: rgba(2, 150, 199);
     background-color: white;
 }

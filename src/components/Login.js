@@ -10,13 +10,15 @@ const Login = () => {
 
     return (
         <div className="login">
+            <div className="login__container">
             <div className="login__telegram">
             <h1>Let's Talk</h1>
                 <img 
-                    src={`${process.env.PUBLIC_URL}undraw_Texting_re_l11n.svg`}
+                    src={`${process.env.PUBLIC_URL}undraw_Texting_re_l11n.svg`} alt="logos"
                 />
             </div>
-            <Button onClick={signIn}>Sign In</Button>
+            <Button onClick={signIn}>Sign In With Google</Button>
+            </div>
         </div>
     )
 }
