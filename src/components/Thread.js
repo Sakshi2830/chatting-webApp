@@ -14,7 +14,7 @@ import { useSelector } from 'react-redux';
 import { selectThreadName, selectThreadId } from '../features/threadSlice'
 import { selectUser } from '../features/userSlicecopy'
 import Message from './Message'
-import * as timeago from 'timeago.js'
+
 
 
 
