@@ -53,7 +53,7 @@ const addThread= () =>{
                 
             </div>
             <div className="sidebar__bottom">
-            <Avatar className="sidebar__bottom__avatar" onClick={() => auth.signOut()} />
+            <Avatar src={user.photo} className="sidebar__bottom__avatar" onClick={() => auth.signOut()} />
             <IconButton>
                 <PhoneOutlined />
             </IconButton>
