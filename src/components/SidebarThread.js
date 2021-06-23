@@ -22,7 +22,7 @@ const SidebarThread = ({id, threadName}) => {
                 doc.data()))
             );
         }
-    }, [])
+    }, [id])
     return (
         <div className="sidebarThread"
             onClick={() =>
