@@ -139,7 +139,7 @@ const Thread = () => {
                         <TimerOutlined/>
                     </IconButton>
                     {(notEmpty && (
-                    <IconButton onClick={sendMessage}>
+                    <IconButton onClick={sendMessage} type="submit">
                         <SendRounded/>
                     </IconButton>
                     ))}
