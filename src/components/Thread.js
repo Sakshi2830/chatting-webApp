@@ -133,7 +133,7 @@ const Thread = () => {
                     
                     <IconButton  onClick={() =>
                         setSelfDestruct(
-                            prompt('Enter the delay in seconds to self destruct the message if not enter 0')
+                            prompt('Enter the delay in seconds to self destruct the message if you dont want to delete enter 0')
                         )
                     }> 
                         <TimerOutlined/>
